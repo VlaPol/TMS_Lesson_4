@@ -23,10 +23,10 @@ public class ThreeDimensionArray {
     }
 
     private static void printArray(int [][][] array){
-        for(int i=0; i< array.length; i++){
-            for(int j = 0; j < array[i].length; j++){
-                for (int k = 0; k < array[i][j].length; k++){
-                    System.out.print(array[i][j][k] + "\t");
+        for (int[][] ints : array) {
+            for (int[] anInt : ints) {
+                for (int i : anInt) {
+                    System.out.print(i + "\t");
                 }
                 System.out.println();
             }
